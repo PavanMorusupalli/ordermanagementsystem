@@ -1,0 +1,199 @@
+"C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\jbr\bin\java.exe" "-Dmaven.multiModuleProjectDirectory=C:\Users\Pavan Morusupalli\IdeaProjects\ordermanagementsystem" "-Dmaven.home=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven3" "-Dclassworlds.conf=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven3\bin\m2.conf" "-Dmaven.ext.class.path=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven-event-listener.jar" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\lib\idea_rt.jar=58248:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar" org.codehaus.classworlds.Launcher -Didea.version2019.2 clean verify
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------< order-management-system:order-management-system >-----------
+[INFO] Building order-management-system 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ order-management-system ---
+[INFO] Deleting C:\Users\Pavan Morusupalli\IdeaProjects\ordermanagementsystem\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ order-management-system ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ order-management-system ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 33 source files to C:\Users\Pavan Morusupalli\IdeaProjects\ordermanagementsystem\target\classes
+[INFO] /C:/Users/Pavan Morusupalli/IdeaProjects/ordermanagementsystem/src/main/java/com/mdaqtest/ordermanagementsystem/domain/Aggregate.java: C:\Users\Pavan Morusupalli\IdeaProjects\ordermanagementsystem\src\main\java\com\mdaqtest\ordermanagementsystem\domain\Aggregate.java uses or overrides a deprecated API.
+[INFO] /C:/Users/Pavan Morusupalli/IdeaProjects/ordermanagementsystem/src/main/java/com/mdaqtest/ordermanagementsystem/domain/Aggregate.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ order-management-system ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Pavan Morusupalli\IdeaProjects\ordermanagementsystem\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ order-management-system ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to C:\Users\Pavan Morusupalli\IdeaProjects\ordermanagementsystem\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M3:test (default-test) @ order-management-system ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.mdaqtest.ordermanagementsystem.domain.model.AggregateTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in com.mdaqtest.ordermanagementsystem.domain.model.AggregateTest
+[INFO] Running com.mdaqtest.ordermanagementsystem.domain.model.order.OrderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.mdaqtest.ordermanagementsystem.domain.model.order.OrderTest
+[INFO] Running com.mdaqtest.ordermanagementsystem.port.incoming.adaptor.resources.lock.OptimisticLockingExceptionMapperTest
+17:53:11.477 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+17:53:11.482 [main] INFO org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.4.3.Final
+17:53:11.507 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+17:53:11.512 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type io.dropwizard.jersey.validation.JerseyParameterNameProvider
+17:53:11.515 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+17:53:11.518 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+17:53:11.519 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+17:53:11.520 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.896 s - in com.mdaqtest.ordermanagementsystem.port.incoming.adaptor.resources.lock.OptimisticLockingExceptionMapperTest
+[INFO] Running com.mdaqtest.ordermanagementsystem.port.incoming.adaptor.resources.order.OrderNotFoundExceptionMapperTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.287 s - in com.mdaqtest.ordermanagementsystem.port.incoming.adaptor.resources.order.OrderNotFoundExceptionMapperTest
+[INFO] Running com.mdaqtest.ordermanagementsystem.port.outgoing.adaptor.eventstore.InMemoryEventStoreTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 s - in com.mdaqtest.ordermanagementsystem.port.outgoing.adaptor.eventstore.InMemoryEventStoreTest
+[INFO] Running com.mdaqtest.ordermanagementsystem.projection.trade.InMemoryTradeRepositoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.mdaqtest.ordermanagementsystem.projection.trade.InMemoryTradeRepositoryTest
+[INFO] Running com.mdaqtest.ordermanagementsystem.service.order.OrderServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 s - in com.mdaqtest.ordermanagementsystem.service.order.OrderServiceTest
+[INFO] Running com.mdaqtest.ordermanagementsystem.service.RetrierTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.mdaqtest.ordermanagementsystem.service.RetrierTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ order-management-system ---
+[INFO] Building jar: C:\Users\Pavan Morusupalli\IdeaProjects\ordermanagementsystem\target\order-management-system-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:3.2.1:shade (default) @ order-management-system ---
+[INFO] Including io.dropwizard:dropwizard-core:jar:1.3.9 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-util:jar:1.3.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0 in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:24.1.1-jre in the shaded jar.
+[INFO] Including org.checkerframework:checker-compat-qual:jar:2.0.0 in the shaded jar.
+[INFO] Including com.google.errorprone:error_prone_annotations:jar:2.1.3 in the shaded jar.
+[INFO] Including com.google.j2objc:j2objc-annotations:jar:1.1 in the shaded jar.
+[INFO] Including org.codehaus.mojo:animal-sniffer-annotations:jar:1.14 in the shaded jar.
+[INFO] Including com.google.code.findbugs:jsr305:jar:3.0.2 in the shaded jar.
+[INFO] Including joda-time:joda-time:jar:2.10.1 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-jackson:jar:1.3.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.9.8 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.9.8 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.datatype:jackson-datatype-guava:jar:2.9.8 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.8 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.8 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.8 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.module:jackson-module-afterburner:jar:2.9.8 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.datatype:jackson-datatype-joda:jar:2.9.8 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.26 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-validation:jar:1.3.9 in the shaded jar.
+[INFO] Including org.hibernate:hibernate-validator:jar:5.4.3.Final in the shaded jar.
+[INFO] Including org.jboss.logging:jboss-logging:jar:3.3.0.Final in the shaded jar.
+[INFO] Including com.fasterxml:classmate:jar:1.3.1 in the shaded jar.
+[INFO] Including org.glassfish:javax.el:jar:3.0.0 in the shaded jar.
+[INFO] Including org.javassist:javassist:jar:3.24.1-GA in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-configuration:jar:1.3.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.9.8 in the shaded jar.
+[INFO] Including org.yaml:snakeyaml:jar:1.23 in the shaded jar.
+[INFO] Including org.apache.commons:commons-lang3:jar:3.7 in the shaded jar.
+[INFO] Including org.apache.commons:commons-text:jar:1.2 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-logging:jar:1.3.9 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-logback:jar:4.0.5 in the shaded jar.
+[INFO] Including org.slf4j:jul-to-slf4j:jar:1.7.26 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.2.3 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.2.3 in the shaded jar.
+[INFO] Including org.slf4j:log4j-over-slf4j:jar:1.7.26 in the shaded jar.
+[INFO] Including org.slf4j:jcl-over-slf4j:jar:1.7.26 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-util:jar:9.4.14.v20181114 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-metrics:jar:1.3.9 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-jersey:jar:1.3.9 in the shaded jar.
+[INFO] Including org.glassfish.jersey.ext:jersey-metainf-services:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.ext:jersey-bean-validation:jar:2.25.1 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-jersey2:jar:4.0.5 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.9.8 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.9.8 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.9.8 in the shaded jar.
+[INFO] Including org.glassfish.jersey.containers:jersey-container-servlet:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.25.1 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-server:jar:9.4.14.v20181114 in the shaded jar.
+[INFO] Including javax.servlet:javax.servlet-api:jar:3.1.0 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-io:jar:9.4.14.v20181114 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-webapp:jar:9.4.14.v20181114 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-xml:jar:9.4.14.v20181114 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-continuation:jar:9.4.14.v20181114 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-servlets:jar:1.3.9 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-annotation:jar:4.0.5 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-jetty:jar:1.3.9 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-jetty9:jar:4.0.5 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-servlet:jar:9.4.14.v20181114 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-security:jar:9.4.14.v20181114 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-servlets:jar:9.4.14.v20181114 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-http:jar:9.4.14.v20181114 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-lifecycle:jar:1.3.9 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-core:jar:4.0.5 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-jvm:jar:4.0.5 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-jmx:jar:4.0.5 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-servlets:jar:4.0.5 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-json:jar:4.0.5 in the shaded jar.
+[INFO] Including com.papertrail:profiler:jar:1.0.2 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-healthchecks:jar:4.0.5 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-request-logging:jar:1.3.9 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-access:jar:1.2.3 in the shaded jar.
+[INFO] Including net.sourceforge.argparse4j:argparse4j:jar:0.8.1 in the shaded jar.
+[INFO] Including org.eclipse.jetty.toolchain.setuid:jetty-setuid-java:jar:1.0.3 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-client:jar:1.3.9 in the shaded jar.
+[INFO] Including org.glassfish.jersey.core:jersey-client:jar:2.25.1 in the shaded jar.
+[INFO] Including javax.ws.rs:javax.ws.rs-api:jar:2.0.1 in the shaded jar.
+[INFO] Including org.glassfish.hk2:hk2-api:jar:2.5.0-b32 in the shaded jar.
+[INFO] Including org.glassfish.hk2:hk2-utils:jar:2.5.0-b32 in the shaded jar.
+[INFO] Including org.glassfish.hk2.external:aopalliance-repackaged:jar:2.5.0-b32 in the shaded jar.
+[INFO] Including org.glassfish.hk2.external:javax.inject:jar:2.5.0-b32 in the shaded jar.
+[INFO] Including org.glassfish.hk2:hk2-locator:jar:2.5.0-b32 in the shaded jar.
+[INFO] Including org.glassfish.jersey.ext.rx:jersey-rx-client:jar:2.25.1 in the shaded jar.
+[INFO] Including org.apache.httpcomponents:httpclient:jar:4.5.7 in the shaded jar.
+[INFO] Including org.apache.httpcomponents:httpcore:jar:4.4.11 in the shaded jar.
+[INFO] Including commons-codec:commons-codec:jar:1.11 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-httpclient:jar:4.0.5 in the shaded jar.
+[INFO] Including org.glassfish.jersey.connectors:jersey-apache-connector:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.ext:jersey-declarative-linking:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.core:jersey-common:jar:2.25.1 in the shaded jar.
+[INFO] Including javax.annotation:javax.annotation-api:jar:1.2 in the shaded jar.
+[INFO] Including org.glassfish.jersey.bundles.repackaged:jersey-guava:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.hk2:osgi-resource-locator:jar:1.0.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.core:jersey-server:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.media:jersey-media-jaxb:jar:2.25.1 in the shaded jar.
+[INFO] Including javax.validation:validation-api:jar:1.1.0.Final in the shaded jar.
+[INFO] Including commons-validator:commons-validator:jar:1.6 in the shaded jar.
+[INFO] Including commons-beanutils:commons-beanutils:jar:1.9.2 in the shaded jar.
+[INFO] Including commons-digester:commons-digester:jar:1.8.1 in the shaded jar.
+[INFO] Including commons-logging:commons-logging:jar:1.2 in the shaded jar.
+[INFO] Including commons-collections:commons-collections:jar:3.2.2 in the shaded jar.
+[INFO] Including javax.xml.bind:jaxb-api:jar:2.3.1 in the shaded jar.
+[INFO] Including javax.activation:javax.activation-api:jar:1.2.0 in the shaded jar.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] jcl-over-slf4j-1.7.26.jar, commons-logging-1.2.jar define 6 overlapping classes: 
+[WARNING]   - org.apache.commons.logging.impl.SimpleLog$1
+[WARNING]   - org.apache.commons.logging.Log
+[WARNING]   - org.apache.commons.logging.impl.SimpleLog
+[WARNING]   - org.apache.commons.logging.LogConfigurationException
+[WARNING]   - org.apache.commons.logging.impl.NoOpLog
+[WARNING]   - org.apache.commons.logging.LogFactory
+[WARNING] maven-shade-plugin has detected that some class files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing C:\Users\Pavan Morusupalli\IdeaProjects\ordermanagementsystem\target\order-management-system-1.0-SNAPSHOT.jar with C:\Users\Pavan Morusupalli\IdeaProjects\ordermanagementsystem\target\order-management-system-1.0-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: C:\Users\Pavan Morusupalli\IdeaProjects\ordermanagementsystem\dependency-reduced-pom.xml
+[INFO] 
+[INFO] --- maven-failsafe-plugin:3.0.0-M3:integration-test (default) @ order-management-system ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:3.0.0-M3:verify (default) @ order-management-system ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  34.607 s
+[INFO] Finished at: 2019-08-16T17:53:20+05:30
+[INFO] ------------------------------------------------------------------------
