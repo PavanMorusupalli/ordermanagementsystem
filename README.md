@@ -1,6 +1,3 @@
 "Order Management System"
 
-Please refer to Wiki for detailed information.
-
-
-
+Please refer to [Order_Management_System_Wiki](https://github.com/PavanMorusupalli/ordermanagementsystem/wiki) for detailed information.
